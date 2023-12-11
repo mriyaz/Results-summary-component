@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Work+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+/* Extra small devices (phones, less than 576px) */
+html,
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 30px;
+    box-shadow: 0 4px 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    padding: 8%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.result-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(255, 10%, 84%);
+    padding-bottom: 5%;
+}
+
+.result-card h2 {
+    font-size: 1.2rem;
+    padding: 5%;
+}
+
+.result-card p {
+    font-size: 0.9rem;
+    color: hsl(254, 16%, 79%);
+    text-align: center;
+}
+
+.result-card-center-gradient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 100%;
+    width: 45%;
+    height: 45%;
+}
+
+.result-card-center-gradient h1 {
+    font-size: 3rem;
+}
+
+.result-card-center-gradient p {
+    font-weight: 500;
+    color: hsl(252, 16%, 68%);
+}
+
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    padding: 5%;
+    gap: 15px;
+}
+.summary-card h3{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.summary-card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 4%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    font-size: 0.9rem;
+}
+
+.summary-card-cell {
+    display: flex;
+    align-items: center;
+}
+
+.reaction-bg-color {
+    background-color: hsla(0, 43%, 89%, 0.4);
+}
+
+.reaction-color {
+    color: hsl(0, 100%, 67%);
+    font-weight: 500;
+}
+
+.memory-bg-color {
+    background-color: hsl(39, 43%, 89%, 0.4);
+}
+
+.memory-color {
+    color: hsl(39, 100%, 56%);
+    font-weight: 500;
+}
+
+.verbal-bg-color {
+    background-color: hsl(166, 43%, 89%, 0.4);
+}
+
+.verbal-color {
+    color: hsl(166, 100%, 37%);
+    font-weight: 500;
+}
+
+.visual-bg-color {
+    background-color: hsl(234, 43%, 89%, 0.4);
+}
+
+.visual-color {
+    color: hsl(234, 85%, 45%);
+    font-weight: 500;
+}
+
+.summary-btn {
+    color: white;
+    background-color: black;
+    padding: 4%;
+    border-radius: 25px;
+    margin-top: 4%;
+}
+
+.summary-btn:hover,
+.btn-continue:focus {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media (min-width: 576px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        align-items: center;
+    }
+
+    .card {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .result-card {
+        border-radius: 30px;
+    }
+
+    .result-card-center-gradient {
+        width: 60%;
+        height: 60%;
+    }
+
+    .summary-card {
+        min-width: 50%;
+    }
+}
